@@ -9,7 +9,7 @@ export default class Home extends Component {
             <Container>
                 <Header>
                     <Left>
-                      <Icon active name='menu' onPress={()=> this.props.navigator.push({page: 'youtube'})}/>
+                      <Icon active name='menu' />
                     </Left>
                     <Body>
                         <Title>KumpulBerbagi</Title>
@@ -18,7 +18,7 @@ export default class Home extends Component {
                 </Header>
 
                 <Content>
-                      <AlbumList />
+                      <AlbumList navigator={this.props.navigator}/>
                 </Content>
 
                 <Footer>

@@ -29,7 +29,7 @@ export default class Youtube extends Component {
                   <Right />
               </Header>
                 <WebView source={{
-                    uri: 'https://www.youtube.com/channel/UCCk_HKUWIr5F7RJQEAFo9BQ'
+                    uri: this.props.route.youtubeurl
                 }} javaScriptEnabled={true}/>
                 <Footer>
                     <FooterTab>
