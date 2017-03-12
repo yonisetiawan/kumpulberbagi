@@ -9,11 +9,13 @@ class AlbumList extends Component {
     };
 
     componentDidMount() {
-        axios.get('https://rallycoding.herokuapp.com/api/music_albums').then(response => this.setState({albums: response.data}))
-
+      // http://localhost:4040/product
+        // axios.get('https://rallycoding.herokuapp.com/api/music_albums').then(response => this.setState({albums: response.data}))
+        fetch('https://rallycoding.herokuapp.com/api/music_albums')
+          .then(res => res.json())
+          .then(response => this.setState({albums: response}))
     }
     renderAlbums() {
-        // console.log(this.state.albums);
         return this.state.albums.map((album, index) => <AlbumDetail key={index} album={album}/>);
     }
 
