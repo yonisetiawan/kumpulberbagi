@@ -9,25 +9,29 @@ import {
   AppRegistry,
   StyleSheet,
   Text,
-  View
+  View,
+  Navigator
 } from 'react-native';
 import Home from './src/components/home/Index.js'
-import AlbumList from './src/components/AlbumList'
+import Youtube from './src/components/youtube/index.js'
 
 export default class kumpulberbagi extends Component {
   render() {
     return (
-      <View style={styles.container}>
-          <Home />
-      </View>
+      <Navigator initialRoute={{page: 'home'}}
+        renderScene={(route, navigator)=>{
+          switch(route.page){
+            case 'home':
+              return <Home navigator={navigator}/>
+            case 'youtube':
+              return  <Youtube navigator={navigator}/>
+            default:
+              return <Home />
+          }
+        }} />
     );
   }
 }
 
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-  }
-});
 
 AppRegistry.registerComponent('kumpulberbagi', () => kumpulberbagi);

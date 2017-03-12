@@ -9,10 +9,10 @@ export default class Home extends Component {
             <Container>
                 <Header>
                     <Left>
-                      <Icon active name='flame' />
+                      <Icon active name='menu' onPress={()=> this.props.navigator.push({page: 'youtube'})}/>
                     </Left>
                     <Body>
-                        <Title>KBerbagi</Title>
+                        <Title>KumpulBerbagi</Title>
                     </Body>
                     <Right />
                 </Header>
@@ -24,7 +24,6 @@ export default class Home extends Component {
                 <Footer>
                     <FooterTab>
                         <Button full>
-                            <Text>@kumpulberbagi</Text>
                             <Text style={{color: 'white'}}>@kumpulberbagi</Text>
                         </Button>
                     </FooterTab>

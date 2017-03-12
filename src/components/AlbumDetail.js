@@ -1,50 +1,54 @@
-import React from 'react';
+import React, { Component } from 'react';
 import { Text, View, Image, Linking, WebView } from 'react-native';
 import Card from './Card';
 import CardSection from './CardSection';
 import Button from './Button';
 
-const AlbumDetail = ({ album }) => {
-  const { title, artist, thumbnail_image, image, url } = album;
-  const {
-    thumbnailStyle,
-    headerContentStyle,
-    thumbnailContainerStyle,
-    headerTextStyle,
-    imageStyle
-  } = styles;
+// const AlbumDetail = ({ album }) => {
+class AlbumDetail extends Component {
 
-  return (
-    <Card>
-      <CardSection>
-        <View style={thumbnailContainerStyle}>
+  render () {
+    const { title, artist, thumbnail_image, image, url } = this.props.album;
+    const {
+      thumbnailStyle,
+      headerContentStyle,
+      thumbnailContainerStyle,
+      headerTextStyle,
+      imageStyle
+    } = styles;
+    return (
+      <Card>
+        <CardSection>
+          <View style={thumbnailContainerStyle}>
+            <Image
+              style={thumbnailStyle}
+              source={{ uri: thumbnail_image }}
+            />
+          </View>
+          <View style={headerContentStyle}>
+            <Text style={headerTextStyle}>{title}</Text>
+            <Text>{artist}</Text>
+          </View>
+        </CardSection>
+
+        <CardSection>
           <Image
-            style={thumbnailStyle}
-            source={{ uri: thumbnail_image }}
+            style={imageStyle}
+            source={{ uri: image }}
           />
-        </View>
-        <View style={headerContentStyle}>
-          <Text style={headerTextStyle}>{title}</Text>
-          <Text>{artist}</Text>
-        </View>
-      </CardSection>
+        </CardSection>
 
-      <CardSection>
-        <Image
-          style={imageStyle}
-          source={{ uri: image }}
-        />
-      </CardSection>
+        <CardSection>
+          <Button onPress={() =>
+              this.props.navigator.push({page: 'youtube'})
+            }>
+            Get Free
+          </Button>
+        </CardSection>
+      </Card>
+    );
+  }
 
-      <CardSection>
-        <Button onPress={() =>
-            Linking.openURL(url)
-          }>
-          Buy Now
-        </Button>
-      </CardSection>
-    </Card>
-  );
 };
 
 const styles = {
