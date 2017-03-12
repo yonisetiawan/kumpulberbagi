@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import { Container, Header, Title, Content, Footer, FooterTab, Button, Left, Right, Body, Icon } from 'native-base';
 import { Text } from 'react-native'
+import AlbumList from '../AlbumList'
 
 export default class Home extends Component {
     render() {
@@ -17,13 +18,14 @@ export default class Home extends Component {
                 </Header>
 
                 <Content>
-
+                      <AlbumList />
                 </Content>
 
                 <Footer>
                     <FooterTab>
                         <Button full>
                             <Text>@kumpulberbagi</Text>
+                            <Text style={{color: 'white'}}>@kumpulberbagi</Text>
                         </Button>
                     </FooterTab>
                 </Footer>
