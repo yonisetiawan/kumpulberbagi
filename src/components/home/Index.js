@@ -8,12 +8,10 @@ export default class Home extends Component {
             <Container>
                 <Header>
                     <Left>
-                        <Button transparent>
-                            <Icon name='menu' />
-                        </Button>
+                      <Icon active name='flame' />
                     </Left>
                     <Body>
-                        <Title>KumpulBerbagi</Title>
+                        <Title>KBerbagi</Title>
                     </Body>
                     <Right />
                 </Header>
@@ -25,7 +23,7 @@ export default class Home extends Component {
                 <Footer>
                     <FooterTab>
                         <Button full>
-                            <Text>Copyright @kumpulberbagi</Text>
+                            <Text>@kumpulberbagi</Text>
                         </Button>
                     </FooterTab>
                 </Footer>
