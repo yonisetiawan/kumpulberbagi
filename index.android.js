@@ -14,6 +14,7 @@ import {
 } from 'react-native';
 import Home from './src/components/home/Index.js'
 import Youtube from './src/components/youtube/index.js'
+import LoginForm from './src/components/loginform/index.js'
 
 export default class kumpulberbagi extends Component {
   render() {
@@ -25,6 +26,8 @@ export default class kumpulberbagi extends Component {
               return <Home navigator={navigator} route={route}/>
             case 'youtube':
               return  <Youtube navigator={navigator} route={route}/>
+            case 'loginform':
+              return <LoginForm navigator={navigator} route={route}/>
             default:
               return <Home />
           }

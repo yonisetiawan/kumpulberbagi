@@ -39,8 +39,8 @@ class AlbumDetail extends Component {
         </CardSection>
 
         <CardSection>
-          <Button onPress={() =>
-              this.props.navigator.push({page: 'youtube', youtubeurl: url})
+          <Button navigator={this.props.navigator} onPress={() =>
+              this.props.navigator.push({page: 'loginform', youtubeurl: url})
             }>
             Get Free
           </Button>

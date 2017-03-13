@@ -69,6 +69,11 @@
 		AF185023DD754B648BC6F0EA /* Skia.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 1B5327C62C7B42CAAC2DA701 /* Skia.ttf */; };
 		972074F9D59C4C709E294AB3 /* Times New Roman.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F70D21134FF249839235F6A9 /* Times New Roman.ttf */; };
 		F26BFB2B41AC42E4B239EB9A /* Zocial.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A006C68E52034FFBB41EAA2B /* Zocial.ttf */; };
+		CF27861D62DC4C319D2C16CB /* libRNGoogleSignin.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 0412E45D5515410AA5BF844E /* libRNGoogleSignin.a */; };
+		11A9AD3F07CE44378D045D26 /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 8D94D5497A9A4CC5832B5DD2 /* libz.tbd */; };
+		EA59E8BBE55349D5AF5C5DF7 /* SafariServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 83340BA819084E589F82E561 /* SafariServices.framework */; };
+		36F110E79FAF473AB36CF0E6 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D42F929FEDAE45929866305C /* SystemConfiguration.framework */; };
+		22EDB346F2744C91AC8D71D5 /* AddressBook.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8D027F8528424CE1940BA1D7 /* AddressBook.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -322,6 +327,12 @@
 		1B5327C62C7B42CAAC2DA701 /* Skia.ttf */ = {isa = PBXFileReference; name = "Skia.ttf"; path = "../node_modules/native-base/Fonts/Skia.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
 		F70D21134FF249839235F6A9 /* Times New Roman.ttf */ = {isa = PBXFileReference; name = "Times New Roman.ttf"; path = "../node_modules/native-base/Fonts/Times New Roman.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
 		A006C68E52034FFBB41EAA2B /* Zocial.ttf */ = {isa = PBXFileReference; name = "Zocial.ttf"; path = "../node_modules/native-base/Fonts/Zocial.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		9148038A74294A9E90F7119C /* RNGoogleSignin.xcodeproj */ = {isa = PBXFileReference; name = "RNGoogleSignin.xcodeproj"; path = "../node_modules/react-native-google-signin/ios/RNGoogleSignin.xcodeproj"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = wrapper.pb-project; explicitFileType = undefined; includeInIndex = 0; };
+		0412E45D5515410AA5BF844E /* libRNGoogleSignin.a */ = {isa = PBXFileReference; name = "libRNGoogleSignin.a"; path = "libRNGoogleSignin.a"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = archive.ar; explicitFileType = undefined; includeInIndex = 0; };
+		8D94D5497A9A4CC5832B5DD2 /* libz.tbd */ = {isa = PBXFileReference; name = "libz.tbd"; path = "usr/lib/libz.tbd"; sourceTree = SDKROOT; fileEncoding = undefined; lastKnownFileType = sourcecode.text-based-dylib-definition; explicitFileType = undefined; includeInIndex = 0; };
+		83340BA819084E589F82E561 /* SafariServices.framework */ = {isa = PBXFileReference; name = "SafariServices.framework"; path = "System/Library/Frameworks/SafariServices.framework"; sourceTree = SDKROOT; fileEncoding = undefined; lastKnownFileType = wrapper.framework; explicitFileType = undefined; includeInIndex = 0; };
+		D42F929FEDAE45929866305C /* SystemConfiguration.framework */ = {isa = PBXFileReference; name = "SystemConfiguration.framework"; path = "System/Library/Frameworks/SystemConfiguration.framework"; sourceTree = SDKROOT; fileEncoding = undefined; lastKnownFileType = wrapper.framework; explicitFileType = undefined; includeInIndex = 0; };
+		8D027F8528424CE1940BA1D7 /* AddressBook.framework */ = {isa = PBXFileReference; name = "AddressBook.framework"; path = "System/Library/Frameworks/AddressBook.framework"; sourceTree = SDKROOT; fileEncoding = undefined; lastKnownFileType = wrapper.framework; explicitFileType = undefined; includeInIndex = 0; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -348,6 +359,11 @@
 				832341BD1AAA6AB300B99B32 /* libRCTText.a in Frameworks */,
 				00C302EA1ABCBA2D00DB3ED1 /* libRCTVibration.a in Frameworks */,
 				139FDEF61B0652A700C62182 /* libRCTWebSocket.a in Frameworks */,
+				CF27861D62DC4C319D2C16CB /* libRNGoogleSignin.a in Frameworks */,
+				11A9AD3F07CE44378D045D26 /* libz.tbd in Frameworks */,
+				EA59E8BBE55349D5AF5C5DF7 /* SafariServices.framework in Frameworks */,
+				36F110E79FAF473AB36CF0E6 /* SystemConfiguration.framework in Frameworks */,
+				22EDB346F2744C91AC8D71D5 /* AddressBook.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -514,6 +530,7 @@
 				832341B01AAA6A8300B99B32 /* RCTText.xcodeproj */,
 				00C302DF1ABCB9EE00DB3ED1 /* RCTVibration.xcodeproj */,
 				139FDEE61B06529A00C62182 /* RCTWebSocket.xcodeproj */,
+				9148038A74294A9E90F7119C /* RNGoogleSignin.xcodeproj */,
 			);
 			name = Libraries;
 			sourceTree = "<group>";
@@ -535,6 +552,7 @@
 				00E356EF1AD99517003FC87E /* kumpulberbagiTests */,
 				83CBBA001A601CBA00E9B192 /* Products */,
 				4352836B5316408183E7AF8F /* Resources */,
+				BCCD727497AA46F4B03CE32A /* Frameworks */,
 			);
 			indentWidth = 2;
 			sourceTree = "<group>";
@@ -590,6 +608,18 @@
 				A006C68E52034FFBB41EAA2B /* Zocial.ttf */,
 			);
 			name = Resources;
+			path = "";
+			sourceTree = "<group>";
+		};
+		BCCD727497AA46F4B03CE32A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				8D94D5497A9A4CC5832B5DD2 /* libz.tbd */,
+				83340BA819084E589F82E561 /* SafariServices.framework */,
+				D42F929FEDAE45929866305C /* SystemConfiguration.framework */,
+				8D027F8528424CE1940BA1D7 /* AddressBook.framework */,
+			);
+			name = Frameworks;
 			path = "";
 			sourceTree = "<group>";
 		};
@@ -1116,6 +1146,14 @@
 				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/kumpulberbagi.app/kumpulberbagi";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/$(TARGET_NAME)\"",
+				);
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(SRCROOT)/../node_modules/react-native-google-signin/ios/RNGoogleSignin/**",
+				);
 			};
 			name = Debug;
 		};
@@ -1133,6 +1171,14 @@
 				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/kumpulberbagi.app/kumpulberbagi";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/$(TARGET_NAME)\"",
+				);
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(SRCROOT)/../node_modules/react-native-google-signin/ios/RNGoogleSignin/**",
+				);
 			};
 			name = Release;
 		};
@@ -1151,6 +1197,10 @@
 				);
 				PRODUCT_NAME = kumpulberbagi;
 				VERSIONING_SYSTEM = "apple-generic";
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(SRCROOT)/../node_modules/react-native-google-signin/ios/RNGoogleSignin/**",
+				);
 			};
 			name = Debug;
 		};
@@ -1168,6 +1218,10 @@
 				);
 				PRODUCT_NAME = kumpulberbagi;
 				VERSIONING_SYSTEM = "apple-generic";
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(SRCROOT)/../node_modules/react-native-google-signin/ios/RNGoogleSignin/**",
+				);
 			};
 			name = Release;
 		};
@@ -1194,6 +1248,14 @@
 				SDKROOT = appletvos;
 				TARGETED_DEVICE_FAMILY = 3;
 				TVOS_DEPLOYMENT_TARGET = 9.2;
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/$(TARGET_NAME)\"",
+				);
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(SRCROOT)/../node_modules/react-native-google-signin/ios/RNGoogleSignin/**",
+				);
 			};
 			name = Debug;
 		};
@@ -1220,6 +1282,14 @@
 				SDKROOT = appletvos;
 				TARGETED_DEVICE_FAMILY = 3;
 				TVOS_DEPLOYMENT_TARGET = 9.2;
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/$(TARGET_NAME)\"",
+				);
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(SRCROOT)/../node_modules/react-native-google-signin/ios/RNGoogleSignin/**",
+				);
 			};
 			name = Release;
 		};
@@ -1241,6 +1311,10 @@
 				SDKROOT = appletvos;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/kumpulberbagi-tvOS.app/kumpulberbagi-tvOS";
 				TVOS_DEPLOYMENT_TARGET = 10.1;
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/$(TARGET_NAME)\"",
+				);
 			};
 			name = Debug;
 		};
@@ -1262,6 +1336,10 @@
 				SDKROOT = appletvos;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/kumpulberbagi-tvOS.app/kumpulberbagi-tvOS";
 				TVOS_DEPLOYMENT_TARGET = 10.1;
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/$(TARGET_NAME)\"",
+				);
 			};
 			name = Release;
 		};

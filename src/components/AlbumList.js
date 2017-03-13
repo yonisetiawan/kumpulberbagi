@@ -10,9 +10,11 @@ class AlbumList extends Component {
 
     componentDidMount() {
         // axios.get('https://rallycoding.herokuapp.com/api/music_albums').then(response => this.setState({albums: response.data}))
-        fetch('https://rallycoding.herokuapp.com/api/music_albums')
-          .then(res => res.json())
-          .then(response => this.setState({albums: response}))
+        axios.get('https://rallycoding.herokuapp.com/api/music_albums').then(response => this.setState({albums: response.data})).catch((err)=>console.log(err))
+        // fetch('http://localhost:8080/product')
+        //   .then(res => res.json())
+        //   .then(response => this.setState({albums: response}))
+        //   .catch((err)=>console.log(err))
     }
     renderAlbums() {
         return this.state.albums.map((album, index) => <AlbumDetail key={index} album={album} navigator={this.props.navigator}/>);

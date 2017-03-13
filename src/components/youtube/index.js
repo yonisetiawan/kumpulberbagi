@@ -21,7 +21,7 @@ export default class Youtube extends Component {
             <View style={styles.container}>
               <Header>
                   <Left>
-                    <Icon active name='home' onPress={() => this.props.navigator.pop()}/>
+                    <Icon active name='home' onPress={() => this.props.navigator.popToTop()}/>
                   </Left>
                   <Body>
                       <Title>KumpulBerbagi</Title>
